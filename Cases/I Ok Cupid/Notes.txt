@@ -1,0 +1,33 @@
+Data Notes:
+
+Profiles:
+> names(profilesData)
+ [1] "age"         "body_type"   "diet"        "drinks"     
+ [5] "drugs"       "education"   "ethnicity"   "height"     
+ [9] "income"      "job"         "last_online" "location"   
+[13] "offspring"   "orientation" "pets"        "religion"   
+[17] "sex"         "sign"        "smokes"      "speaks"     
+[21] "status"      "essay0"   
+
+addr
+> names(addrData)
+[1] "location"   "postalCode" "city"       "county"    
+[5] "state"  
+
+LatLon.csv
+> names(locationData)
+[1] "location" "lat"      "lon"    
+
+Census Data:
+More data than I could ever hope to get through on all sorts of household stuff
+
+
+Trend Ideas
+sex/orientation vs last online
+2 sexes (m, f), 3 orientations (straight, gay, bisexual)
+last online ranges from 2011-06-27 to 2012-07-01
+
+Longitude/Latitude vs. drinks/smokes body_type?
+diet vs. astrology sign
+
+pets vs. education quitters (dropped out)
