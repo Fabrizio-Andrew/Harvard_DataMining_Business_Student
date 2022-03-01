@@ -19,7 +19,7 @@ d$active <- cbind(d$active, ifelse(d$last_online >= as.Date('2012-07-01'), 4,
                                        ifelse(d$last_online >= as.Date('2012-04-01'), 1, 0)))))
 
 
-# plot sex + sexuality agains last_online
+# plot sex + sexuality against last_online
 r <- ggplot(data=d, aes(x = factor(active), fill = s)) + 
   geom_bar(stat='count', position = 'dodge') +
   scale_x_discrete(breaks = c(0, 1, 2, 3, 4),

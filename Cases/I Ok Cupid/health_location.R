@@ -25,7 +25,8 @@ d$unhealthyHabits <- cbind(d$unhealthyHabits, ifelse(d$body_type %in% c('a littl
                                            d$drugs %in% c('sometimes', 'often') |
                                              d$drinks %in% c('often', 'very often', 'desperately') |
                                                d$smokes %in% c('sometimes', 'when drinking', 'yes', 'trying to quit'), 1, 0))
-#
+
+# create tables w/ locations of healthy/unhealthy occurrences + frequency of each occurence
 unhealthyPeople <- subset(d, unhealthyHabits == 1)
 unhealthyLocations <- as.data.frame(table(unhealthyPeople['location']))
 healthyPeople <- subset(d, unhealthyHabits == 0)

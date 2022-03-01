@@ -28,6 +28,8 @@ sex/orientation vs last online
 last online ranges from 2011-06-27 to 2012-07-01
 
 Longitude/Latitude vs. drinks/smokes body_type?
+
+
 diet vs. astrology sign
 
 pets vs. education quitters (dropped out)
