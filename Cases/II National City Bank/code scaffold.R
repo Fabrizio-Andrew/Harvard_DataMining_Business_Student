@@ -8,16 +8,18 @@ library(vtreat)
 library(caret)
 
 # Wd
-setwd("/cloud/project/cases/National City Bank/training")
+setwd("~/Desktop/Andrew_Harvard_DataMining_Business/Cases/II National City Bank")
 
-# Raw data, need to add others
-currentData   <- read.csv('CurrentCustomerMktgResults.csv')
-newDataSource <- read.csv('householdVehicleData.csv') 
+# Raw data
+currentData   <- read.csv('training/CurrentCustomerMktgResults.csv')
+vehData <- read.csv('training/householdVehicleData.csv') 
+axiomData <- read.csv('training/householdAxiomData.csv')
+creditData <- read.csv('training/householdCreditData.csv')
 
 # Perform a join, neeed to add other data sets
-joinData <- left_join(currentData, newDataSource, by = c('HHuniqueID'))
-joinData <- left_join(joinData, ...)
-joinData <- left_join(joinData, ...)
+joinData <- left_join(currentData, vehData, by = c('HHuniqueID'))
+joinData <- left_join(joinData, axiomData, by = c('HHuniqueID'))
+joinData <- left_join(joinData, creditData, by = c('HHuniqueID'))
 
 # This is a classification problem so ensure R knows Y isn't 0/1 as integers
 joinData$Y_AcceptedOffer <- as.factor(joinData$Y_AcceptedOffer)

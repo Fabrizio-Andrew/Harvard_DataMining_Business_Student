@@ -1,0 +1,25 @@
+past_Outcome == 'success' results in 89.26% success rate
+total data set results in 40.1% success rate
+
+This alone would guess positives correctly 89% of the time, but generate 40% false-negative rate.  Perhaps look at cutting down false negatives?
+
+Other Possible correlations:
+
+carMake
+carYr
+headOfhouseholdGender
+annualDonations
+AffluencePurchases
+Age
+job
+Marital
+Education
+DefaultOnRecord
+RecentBalance
+CarLoan
+
+FORMAT: Sample, Explore, Modify, Model, Analyze
+Presentation - data description, problem statement
+
+
+Build PPT

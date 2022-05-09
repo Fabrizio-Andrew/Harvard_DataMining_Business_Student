@@ -1,0 +1,54 @@
+Models:
+
+Linear Regression, KNN and Random Forest
+
+Tips:
+
+Start with agenda
+Clean customer and prospect data!  (vtreat)
+Explore data - what is worthwile to keep
+Organize script - SEMMA
+
+Organize Presentation and remember audience
+Focus on biz problem and use case
+
+Least amount of variables to get outcome
+avoid multicollinearity
+
+How evaluate?
+Root mean squared error - RMSE
+  - ModelMetrics or MLmetrics libraries
+  
+Mean Absolute Percentage Error - MAPE
+  - MLmetrics library
+  
+R squared - R^2
+ - summary(fit)$r.squared
+ - or just call summary
+
+Mean absolute error - MAE
+
+Ideas for correlations:
+Age
+state
+HomePurchasePrice
+LandValue
+DwellingUnitSize
+storeVisitFrequency
+PropertyType
+DonatesToCharityInHome
+All Donations?
+Magazines - people still read magazines?
+PresenceOfChildrenCode
+HomeOwnerRenter
+MedianEducationYears
+NetWorth
+Investor
+BusinessOwner
+OccupationIndustry
+UpscaleBuyerInHome
+BuyerofAntiquesinHousehold
+BuyerofArtinHousehold
+GeneralCollectorinHousehold
+ComputerOwnerInHome
+

@@ -24,5 +24,7 @@ p <- ggplot(data=d, aes(x = factor(active), fill = s)) +
   geom_bar(stat='count', position = 'dodge') +
   scale_x_discrete(breaks = c(0, 1, 2, 3, 4),
                    labels = c('year', '3 months', '1 month', '1 week', '1 day')) +
+  ggtitle('Recent Activity vs. Gender and Sexuality') +
+  xlab('Recent Activity') +
   theme_light()
 p

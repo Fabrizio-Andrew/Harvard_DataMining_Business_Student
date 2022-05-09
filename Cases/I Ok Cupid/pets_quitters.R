@@ -30,7 +30,7 @@ dfPcts <- data.frame(quitters, Pcts)
 p <- ggplot(data=dfPcts, aes(x = factor(quitters), y = Pcts)) + 
   geom_bar(stat = 'identity') +
   scale_x_discrete(breaks = c(0, 1),
-                   labels = c('Dropouts', 'Non-Dropouts')) +
+                   labels = c('Non-Dropouts', 'Dropouts')) +
   ggtitle('Dropouts (any level) vs. Pet ownership') +
   xlab('Education') +
   ylab('Percent Owning Pets') +
